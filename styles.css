@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oi&display=swap');
+
+:root {
+  --laranja-claro: #9b0202;
+  --alto-contraste-fundo: #ffffff;
+  --alto-contraste-texto: #ffffff;
+  --alto-contraste-link: #0004ff;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+header {
+  background-color: #000000;
+}
+
+.nav-link {
+  color: var(--laranja-claro);
+  font-weight: 600;
+}
+
+.inicio-fundo {
+  background-image: url('img/Veigh(1).jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 80px;
+  width: 100%;
+  height: 606px;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.img-inicio {
+  position: relative;
+  right: 0;
+  top: 0;
+  width: 45rem;
+  height: auto;
+  border-radius: 20px;
+}
+
+.esquerda-conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.botao-inicio {
+  background-color: var(--laranja-claro);
+  border-radius: 30px;
+  border: none;
+  width: 14em;
+  height: 3em;
+  color: rgb(6, 6, 6);
+}
+
+.display-4 {
+  text-shadow: -5px 5px var(--laranja-claro);
+}
+
+#Veigh {
+  position: relative;
+  padding-top: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+#Veigh .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+h2 {
+  font-family: 'Oi', serif;
+  font-size: 2.5em;
+  color: var(--laranja-claro);
+}
+
+p {
+  color: #676666;
+}
+
+#galeria {
+  background-color: #000000;
+  padding-bottom: 5rem;
+}
+
+.fundo-galeria {
+  background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+  background-size: 180px 180px;
+}
+
+#contato {
+  background-image: url('img/background.jpeg');
+  background-size: cover;
+  padding: 4rem 0;
+}
+
+.formulario {
+  background-color: #000000;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.formulario button {
+  background-color: var(--laranja-claro);
+  border: none;
+  font-weight: bold;
+  color: white;
+}
+
+.form-control {
+  background-color: #fffafa;
+}
+
+.menu-acessibilidade {
+  position: fixed;
+  top: 2rem;
+  right: 20px;
+  z-index: 1000;
+}
+
+.rotacao-botao {
+  transform: rotate(-90deg);
+  transform-origin: right center;
+}
+
+.opcoes-acessibilidade {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.opcoes-acessibilidade button {
+  margin-bottom: 5px;
+}
+
+.apresenta-lista {
+  display: none;
+}
+
+.alto-contraste {
+  background-color: var(--alto-contraste-fundo);
+  color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario {
+  background-color: var(--alto-contraste-fundo);
+  color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link {
+  color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary {
+  background-color: var(--alto-contraste-link);
+  color: var(--alto-contraste-fundo);
+}
+
+.alto-contraste #Veigh,
+.alto-contraste #galeria {
+  background-color: var(--alto-contraste-fundo);
+}
+
+.alto-contraste .fundo-galeria {
+  background: none;
+}
